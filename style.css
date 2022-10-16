@@ -1,0 +1,662 @@
+body{
+  font-family: Hind Siliguri;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    position: relative;
+  }
+  .lds-dual-ring::before {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid rgb(76, 25, 214);
+    border-color: rgb(22, 60, 226) transparent rgb(57, 56, 150) transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  
+  .lds-dual-ring::after {
+    content: "Generating...";
+    font-family: Hind Siliguri;
+    font-size: 15px;
+    font-weight: bold;
+    color: blue;
+    animation: ltext 8s linear infinite;
+    width: 200px;
+    position: absolute;
+    left: -63%;
+    text-align: center;
+  }
+  
+  @keyframes ltext {
+    0% {
+      content: "Generating...";
+    }
+  
+    20% {
+      content: "Organizing content...";
+    }
+    40% {
+      content: "Image rendering...";
+    }
+  
+    60% {
+      content: "Reducing document size...";
+    }
+  
+    80% {
+      content: "Making ready....";
+    }
+  }
+  
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .loader {
+    display: none;
+  }
+  
+  .lds {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.473);
+  }
+  #sheet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  
+  #sheet .sbody {
+    width: 85%;
+    display: none;
+  }
+  .flex1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .uni {
+    margin-top: 30px;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "Hind Siliguri", sans-serif;
+  }
+  
+  .logo img {
+    height: 130px;
+  }
+  
+  .headx2 {
+    font-family: Hind Siliguri;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  
+  #sheet table {
+    font-family: Roboto;
+    width: 350px;
+    /* border: 2px solid black; */
+    border-collapse: collapse;
+  }
+  td {
+    border: 1px solid;
+    padding: 3px;
+  }
+  .t1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    /* border-bottom: 2px solid; */
+  }
+  
+  .t3 {
+    width: 50%;
+    font-weight: bold;
+    text-align: center;
+    /* border-left: 2px solid; */
+  }
+  
+  .sl {
+    font-family: Roboto;
+    font-size: 16px;
+  }
+  
+  .sign {
+    font-family: Roboto;
+    border: 2px solid;
+    height: 63px;
+    padding: 3px;
+    position: relative;
+    font-size: 14px;
+  }
+  
+  .st {
+    position: absolute;
+    width: 100%;
+    bottom: 3px;
+    left: 0;
+  }
+  
+  .Form {
+    text-align: left;
+    font-size: 19px;
+    font-family: Lato;
+    margin-top: 20px;
+  }
+  
+  .inst {
+    text-align: left;
+    font-family: Lato;
+    margin-top: 40px;
+  }
+  
+  .inhead {
+    font-size: 21px;
+    font-weight: bold;
+  }
+  .inst ul {
+    font-size: 16px;
+  }
+  
+  .inst ol {
+    padding: 5px;
+  }
+  
+  .r {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .name {
+    min-width: 415px;
+  }
+  
+  .nyear {
+    min-width: 80px;
+  }
+  
+  .dept {
+    min-width: 315px;
+  }
+  .year {
+    min-width: 60px;
+  }
+  
+  .semester {
+    min-width: 60px;
+  }
+  
+  .id {
+    min-width: 125px;
+  }
+  
+  .reg {
+    min-width: 165px;
+  }
+  
+  .session {
+    min-width: 120px;
+  }
+  
+  .code {
+    min-width: 130px;
+  }
+  
+  .title {
+    min-width: 320px;
+  }
+  
+  .date {
+    min-width: 180px;
+  }
+  
+  .dot {
+    border-bottom: 2px dotted;
+    text-align: center;
+    font-weight: bold;
+  }
+  #myform, #assignment_form {
+    padding: 10px;
+    font-family: Hind Siliguri;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  
+  .btn {
+    font-family: Hind Siliguri;
+  }
+  .head {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+.assignment{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: Hind Siliguri;
+}
+
+.abody{
+    text-align: center;
+    width: 90%;
+}
+
+.alogo{
+  margin-top: 50px;
+}
+  .alogo img{
+      height: 180px;
+  }
+
+  .auni{
+   font-size: 35px;
+   font-weight: bold;
+  }
+
+  .atitle1{
+      font-size: 27px;
+    
+  }
+
+  .deptName{
+      font-weight: bold;
+  }
+
+  .assignment_name{
+      background: #6494ed;
+      padding: 10px;
+      font-size: 25px;
+      border-radius: 5px;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.867);
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .act{
+   font-size: 26px;
+   margin-top: 30px;
+   font-weight: bold;
+  }
+
+ .a{
+     display: flex;
+     font-size: 24px;
+ }
+ .at{
+     font-weight: bold;
+ }
+ .aa{
+     margin-left: 10px;
+ }
+
+ .dof{
+     font-size: 22px;
+ }
+ 
+ .abody table{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin-top: 30px;
+    border-radius: 10px;
+ }
+ .abody td{
+     border: 1px solid #d8d4d4;
+     padding: 10px;
+     border-radius: 10px;
+ }
+
+ .box-title{
+     font-size: 26px;
+     font-weight: bold;
+     border-bottom: 2px solid;
+     width: 200px;
+     margin-bottom: 10px;
+}
+
+ .atd1{
+     width: 53%;
+     border-right: 2px solid black;
+ }
+
+ .tname{
+     font-size: 25px;
+     font-weight: bold;
+ }
+
+ .rank{
+     font-size: 23px;
+ }
+
+ .tdept{
+     font-weight: bold;
+ }
+
+ .subdate{
+     margin-top: 15px;
+     font-weight: bold;
+     font-size: 23px;
+ }
+
+ .d1{
+     font-size: 29px;
+ }
+
+ .abody{
+   display: none;
+ }
+
+ .color{
+   display: flex;
+   font-weight: bold;
+   font-size: 15px;
+ }
+ .color input{
+  display: block;
+  width: 20%;
+  /* float: left; */
+  height: 50px;
+  margin-left: 10px;
+}
+
+.home{
+  text-align: center;
+  padding: 20px;
+  /* z-index: -1; */
+}
+
+.tt{background: #d8d4d4;}
+
+.top_title{
+ font-weight: bold;
+ font-size: 30px;
+ /* background-color: #fff; */
+ background: linear-gradient(to right, hsl(347, 88%, 55%) 0%, #fc613b 100%);
+ /* -webkit-background-clip: text; */
+ /* -webkit-text-fill-color: transparent; */
+ box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+margin-bottom: 20px;
+padding: 5px;
+text-align: center;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 99;
+color: #fff;
+text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.back_icon{
+  position: absolute;
+  font-size: 50px;
+  z-index: 99999;
+}
+
+
+main{
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#app{
+  min-width: 60%;
+}
+
+
+
+
+a{
+  color: #000;
+}
+.create_title{
+  font-size: 30px;
+  text-align: left;
+}
+
+.avail{
+  border-radius: 2px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  padding: 10px;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 5px;
+
+}
+h2{
+  background: -webkit-linear-gradient(45deg, rgb(97, 22, 216), rgb(197, 53, 137));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+@media (max-width: 660px) {
+  h2{
+    font-size: 25px;
+  }
+
+  .top_title{
+    font-size: 23px;
+  }
+
+  main{
+    display: block;
+  }
+
+  #app{
+    width: 100%;
+  }
+
+  .back_icon{
+    font-size: 35px;
+  }
+
+}
+
+.avail > div {
+  flex: 1 1 auto;
+  margin: 20px;
+}
+
+.cov-e{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 10px;
+  max-width: 230px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: cornflowerblue;
+  color: #f1efef;
+  position: relative;
+}
+
+.cov-a{
+  height: 130px;
+  max-width: 202px;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 5px;
+  color: #f1efef;
+  background: blueviolet;
+  position: relative;
+}
+
+.footer{
+  text-align: center;
+  font-family: Hind Siliguri;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #222;
+  color: #f1efef;
+  padding: 10px;
+  /* position: fixed; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer a{
+  color: #f1efef;
+}
+
+textarea{
+  font-size: 18px;
+  font-family: Hind Siliguri;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 5px;
+  padding: 10px 5px;
+  border: 2px solid;
+  height: 50px;
+}
+
+input{
+  font-family: Hind Siliguri;
+}
+
+.downCount{
+  position: absolute;
+  font-size: 14px;
+  bottom: 0;
+}
+
+.count{
+  font-weight: bold;
+}
+
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgb(129, 104, 219);
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.update{
+  color: green;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
